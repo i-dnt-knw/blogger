@@ -1,0 +1,29 @@
+{{>nav}}
+<style>
+  .link-hover:hover{text-decoration:underline;font-weight:bold;}
+</style>
+
+<div class="container">
+  <h1 class="text-center text-primary" style="font-size:2.4em">New Blogs</h1>
+  <div class="d-flex justify-content-center">
+    <a href="/new" class="m-2 px-4 py-2 btn btn-secondary rounded-pill">Create</a>
+    <a href="/" class="m-2 px-4 py-2 btn btn-secondary rounded-pill">Home</a>
+  </div>
+  {{#each blogs}}
+  <div class="card my-3 py-1">
+    <a style="text-decoration:none;" class="text-primary" href="/blog/{{this.slug}}">
+      <div class="card-body">
+      <h4 class="card-title link-hover">
+        {{this.title}}
+      </h4>
+      <small class="card-subtitle text-muted" style="font-size:0.8em">
+        {{this.date}}
+      </small>
+      <h6 class="card-text my-2 text-secondary">
+        {{this.desc}}
+      </h6>
+    </div>
+    </a>
+  </div>
+  {{/each}}
+</div>

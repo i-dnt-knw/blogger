@@ -1,0 +1,26 @@
+{
+  "name": "blogger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon Server.js"
+  },
+  "keywords": [],
+  "author": "ali",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "bootstrap": "^5.1.3",
+    "dompurify": "^2.3.8",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "jsdom": "^20.0.0",
+    "marked": "^4.0.17",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.4.0",
+    "sanitize-html": "^2.7.0",
+    "slugify": "^1.6.5"
+  }
+}

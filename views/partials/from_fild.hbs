@@ -1,0 +1,17 @@
+
+  <div class="title">
+    <label for="title" class="form-label">Title</label>
+    <input type="text" class="form-control" id="title" name="title" value="{{blogs.title}}" required />
+  </div>
+  <div class="desc">
+    <label for="desc" class="form-label">Description</label>
+    <textarea class="form-control" id="desc" name="desc" rows="3">{{blogs.desc}}</textarea>
+  </div>
+  <div class="markdown">
+    <label for="markdown" class="form-label">Markdown</label>
+    <textarea class="form-control" id="markdown" name="markdown" rows="8">{{blogs.markdown}}</textarea>
+  </div>
+  <div class="post my-3">
+    <a href="/" class="btn btn-outline-secondary">Cancel</a>
+    <button type="submit" class="btn btn-secondary">Submit</button>
+  </div>
